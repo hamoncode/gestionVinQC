@@ -1,6 +1,5 @@
 CREATE DATABASE BD_GestionVinsQC
 
-
 GO
 
 Use BD_GestionVinsQC
