@@ -46,7 +46,6 @@ transactions
   - date 
   - prix
 
-
 #### option ignoré
 
 Acheteur
