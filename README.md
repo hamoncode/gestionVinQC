@@ -25,3 +25,5 @@ légende: #clé_primaire %clé_étrangère
 
 - prototype barre recherche / site web
   - backend et front end en php
+- Web scrapper
+  - parser 1000 à 2000 données dans le projet
