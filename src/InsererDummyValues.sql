@@ -1,7 +1,7 @@
 USE BD_GestionVinsQC;
 
 -- Insertion de données fabriquées dans la base de données avec des codes régionaux abrégés
-INSERT INTO Producteur (id_producteur, nom, adresse, region) VALUES
+INSERT INTO Producteur (id_producteur, nom_producteur, adresse_producteur, region_producteur) VALUES
 (1, 'Mission Hill', 'Kelowna, Canada', 'BC'),
 (2, 'Inniskillin', 'Niagara-on-the-Lake, Canada', 'ON'),
 (3, 'Jackson-Triggs', 'Niagara-on-the-Lake, Canada', 'ON'),
@@ -23,7 +23,7 @@ INSERT INTO Producteur (id_producteur, nom, adresse, region) VALUES
 (19, 'Vignoble du Ruisseau', 'Dunham, Canada', 'QC'),
 (20, 'Vignoble Sainte-Pétronille', 'Sainte-Pétronille, Canada', 'QC');
 
-INSERT INTO Vin (id_vin, id_producteur, nom, type, millesime) VALUES
+INSERT INTO Vin (id_vin, id_producteur, nom_vin, type_vin, millesime_vin) VALUES
 (1, 7, 'Oculus', 'Rouge', 2017),
 (2, 14, 'Icewine Vidal', 'Blanc', 2018),
 (3, 16, 'Cabernet Sauvignon', 'Rouge', 2016),
@@ -86,7 +86,7 @@ INSERT INTO Vin (id_vin, id_producteur, nom, type, millesime) VALUES
 (60, 11, 'Rosé du Vignoble Sainte-Pétronille', 'Rosé', 2019),
 (61, 2, 'Pinot Gris du Vignoble Sainte-Pétronille', 'Blanc', 2020);
 
-INSERT INTO Distributeur (id_distributeur, nom, adresse, region) VALUES
+INSERT INTO Distributeur (id_distributeur, nom_distributeur, adresse_distributeur, region_distributeur) VALUES
 (1, 'VQA Wines of Canada', 'Toronto, Canada', 'ON'),
 (2, 'BC Liquor Stores', 'Vancouver, Canada', 'BC'),
 (3, 'SAQ', 'Montréal, Canada', 'QC'),
@@ -98,7 +98,7 @@ INSERT INTO Distributeur (id_distributeur, nom, adresse, region) VALUES
 (9, 'PEI Liquor Control Commission', 'Charlottetown, Canada', 'PE'),
 (10, 'Saskatchewan Liquor and Gaming Authority', 'Regina, Canada', 'SK');
 
-INSERT INTO Detaillant (id_detaillant, nom, adresse, region) VALUES
+INSERT INTO Detaillant (id_detaillant, nom_detaillant, adresse_detaillant, region_detaillant) VALUES
 (1, 'Vin Room', 'Calgary, Canada', 'AB'),
 (2, 'Wine Rack', 'Toronto, Canada', 'ON'),
 (3, 'LCBO', 'Ottawa, Canada', 'ON'),
@@ -137,17 +137,17 @@ INSERT INTO Transactions (id_transactions, id_producteur, id_detaillant, id_dist
 (23, 13, 5, NULL, 42, '2024-07-13', 15948),
 (24, 7, 3, NULL, 49, '2024-07-14', 19561),
 (25, 14, 9, NULL, 28, '2024-07-07', 17940),
-(26, NULL, 3, 1, 50, '2024-06-05', 18522),
-(27, NULL, 7, 2, 23, '2024-06-10', 19173),
-(28, NULL, 4, 3, 8, '2024-06-15', 16034),
-(29, NULL, 8, 4, 43, '2024-06-20', 18912),
-(30, NULL, 9, 5, 16, '2024-06-25', 17994),
-(31, NULL, 10, 6, 6, '2024-07-01', 19890),
-(32, NULL, 6, 7, 27, '2024-07-02', 18760),
-(33, NULL, 5, 8, 34, '2024-07-03', 16472),
-(34, NULL, 3, 9, 12, '2024-07-04', 19867),
-(35, NULL, 1, 10, 5, '2024-07-05', 18854),
-(36, NULL, 2, 2, 38, '2024-07-06', 17613),
+(26, 3, NULL, 1, 50, '2024-06-05', 18522),
+(27, 7, NULL, 2, 23, '2024-06-10', 19173),
+(28, 4, NULL, 3, 8, '2024-06-15', 16034),
+(29, 8, NULL, 4, 43, '2024-06-20', 18912),
+(30, 9, NULL, 5, 16, '2024-06-25', 17994),
+(31, 10, NULL, 6, 6, '2024-07-01', 19890),
+(32, 6, NULL, 7, 27, '2024-07-02', 18760),
+(33, 5, NULL, 8, 34, '2024-07-03', 16472),
+(34, 3, NULL, 9, 12, '2024-07-04', 19867),
+(35, 1, NULL, 10, 5, '2024-07-05', 18854),
+(36, 2, NULL, 2, 38, '2024-07-06', 17613),
 (37, NULL, 4, 3, 46, '2024-07-07', 16947),
 (38, NULL, 7, 4, 13, '2024-07-08', 19647),
 (39, NULL, 5, 5, 11, '2024-07-09', 16490),
