@@ -1,7 +1,7 @@
-USE BD_VinDuCanada;
+USE BD_GestionVinsQC
 
 -- Insertion de données fabriquées dans la base de données
-INSERT INTO Producteur_de_vin (id_producteur, nom, adresse, région) VALUES
+INSERT INTO Producteur (id_producteur, nom, adresse, region) VALUES
 (1, 'Mission Hill', 'Kelowna, Canada', 'Colombie-Britannique'),
 (2, 'Inniskillin', 'Niagara-on-the-Lake, Canada', 'Ontario'),
 (3, 'Jackson-Triggs', 'Niagara-on-the-Lake, Canada', 'Ontario'),
@@ -23,7 +23,7 @@ INSERT INTO Producteur_de_vin (id_producteur, nom, adresse, région) VALUES
 (19, 'Vignoble du Ruisseau', 'Dunham, Canada', 'Québec'),
 (20, 'Vignoble Sainte-Pétronille', 'Sainte-Pétronille, Canada', 'Québec');
 
-INSERT INTO Vin (id_vin, nom, type, millésime) VALUES
+INSERT INTO Vin (id_vin, nom, type, millesime) VALUES
 (1, 'Oculus', 'Rouge', 2017),
 (2, 'Icewine Vidal', 'Blanc', 2018),
 (3, 'Cabernet Sauvignon', 'Rouge', 2016),
@@ -86,7 +86,7 @@ INSERT INTO Vin (id_vin, nom, type, millésime) VALUES
 (60, 'Rosé du Vignoble Sainte-Pétronille', 'Rosé', 2019),
 (61, 'Pinot Gris du Vignoble Sainte-Pétronille', 'Blanc', 2020);
 
-INSERT INTO Distributeur_de_vin (id_distributeur, nom, adresse, région) VALUES
+INSERT INTO Distributeur (id_distributeur, nom, adresse, region) VALUES
 (1, 'VQA Wines of Canada', 'Toronto, Canada', 'Ontario'),
 (2, 'BC Liquor Stores', 'Vancouver, Canada', 'Colombie-Britannique'),
 (3, 'SAQ', 'Montréal, Canada', 'Québec'),
@@ -98,7 +98,7 @@ INSERT INTO Distributeur_de_vin (id_distributeur, nom, adresse, région) VALUES
 (9, 'PEI Liquor Control Commission', 'Charlottetown, Canada', 'Île-du-Prince-Édouard'),
 (10, 'Saskatchewan Liquor and Gaming Authority', 'Regina, Canada', 'Saskatchewan');
 
-INSERT INTO Détaillant_de_vin (id_détaillant, nom, adresse, région) VALUES
+INSERT INTO Detaillant (id_detaillant, nom, adresse, region) VALUES
 (1, 'Vin Room', 'Calgary, Canada', 'Alberta'),
 (2, 'Wine Rack', 'Toronto, Canada', 'Ontario'),
 (3, 'LCBO', 'Ottawa, Canada', 'Ontario'),
@@ -110,7 +110,7 @@ INSERT INTO Détaillant_de_vin (id_détaillant, nom, adresse, région) VALUES
 (9, 'La Cave à Vin', 'Montréal, Canada', 'Québec'),
 (10, 'Vino Volo', 'Ottawa, Canada', 'Ontario');
 
-INSERT INTO Transaction (id_transaction, date, montant) VALUES
+INSERT INTO Transactions (id_transactions, date, Prix) VALUES
 (1, '2024-09-01', 5000),
 (2, '2024-09-06', 5200),
 (3, '2024-09-11', 5400),
