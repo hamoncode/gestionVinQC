@@ -6,32 +6,32 @@ Use BD_GestionVinsQC
 
 CREATE TABLE Producteur
 (id_producteur SMALLINT CONSTRAINT PK_producteur PRIMARY KEY,
-nom VARCHAR(50),
-adresse VARCHAR(50),
-region CHAR(3) NULL
+nom_producteur VARCHAR(50),
+adresse_producteur VARCHAR(50),
+region_producteur CHAR(3) NULL
 )
 
 CREATE TABLE Distributeur
 (id_distributeur SMALLINT CONSTRAINT PK_distributeur PRIMARY KEY,
-nom VARCHAR(50),
-adresse VARCHAR(50),
-region CHAR(3) NULL
+nom_distributeur VARCHAR(50),
+adresse_distributeur VARCHAR(50),
+region_distributeur CHAR(3) NULL
 )
 
 CREATE TABLE Detaillant
 (id_detaillant SMALLINT CONSTRAINT PK_detaillant PRIMARY KEY,
-nom VARCHAR(50),
-adresse VARCHAR(50),
-region CHAR(3) NULL
+nom_detaillant VARCHAR(50),
+adresse_detaillant VARCHAR(50),
+region_detaillant CHAR(3) NULL
 )
 
 CREATE TABLE Vin
 (id_vin SMALLINT CONSTRAINT PK_vin PRIMARY KEY,
 id_producteur SMALLINT CONSTRAINT FK_producteur1 FOREIGN KEY (id_producteur)
 REFERENCES Producteur (id_producteur),
-nom VARCHAR(50),
-type VARCHAR(50),
-millesime INT
+nom_vin VARCHAR(50),
+type_vin VARCHAR(50),
+millesime_vin INT
 )
 
 CREATE TABLE Transactions

@@ -21,8 +21,7 @@ From Transactions
 -- Request #2 
 -- tous les vin et nom producteur
 
-
--- Request #3 
+-- Request #3
 -- les noms des distributeurs et des détaillants qui ont fait des transactions.
 
 -- Request #4 
