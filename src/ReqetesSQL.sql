@@ -19,7 +19,10 @@ Select *
 From Transactions
 
 -- Request #2 
--- tous les vin et nom producteur
+-- afficher le nom des vin et de leur producteur
+
+SELECT nom
+FROM Vin,producteur
 
 -- Request #3
 -- les noms des distributeurs et des détaillants qui ont fait des transactions.
