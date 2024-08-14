@@ -1,27 +1,27 @@
-USE BD_GestionVinsQC
+USE BD_GestionVinsQC;
 
--- Insertion de données fabriquées dans la base de données
+-- Insertion de données fabriquées dans la base de données avec des codes régionaux abrégés
 INSERT INTO Producteur (id_producteur, nom, adresse, region) VALUES
-(1, 'Mission Hill', 'Kelowna, Canada', 'Colombie-Britannique'),
-(2, 'Inniskillin', 'Niagara-on-the-Lake, Canada', 'Ontario'),
-(3, 'Jackson-Triggs', 'Niagara-on-the-Lake, Canada', 'Ontario'),
-(4, 'Quails'' Gate', 'West Kelowna, Canada', 'Colombie-Britannique'),
-(5, 'Nk''Mip Cellars', 'Osoyoos, Canada', 'Colombie-Britannique'),
-(6, 'Peller Estates', 'Niagara-on-the-Lake, Canada', 'Ontario'),
-(7, 'Tawse Winery', 'Vineland, Canada', 'Ontario'),
-(8, 'Cave Spring', 'Jordan, Canada', 'Ontario'),
-(9, 'Sumac Ridge', 'Summerland, Canada', 'Colombie-Britannique'),
-(10, 'Sandhill Wines', 'Kelowna, Canada', 'Colombie-Britannique'),
-(11, 'CedarCreek Estate Winery', 'Kelowna, Canada', 'Colombie-Britannique'),
-(12, 'Hester Creek', 'Oliver, Canada', 'Colombie-Britannique'),
-(13, 'Burrowing Owl', 'Oliver, Canada', 'Colombie-Britannique'),
-(14, 'Henry of Pelham', 'St. Catharines, Canada', 'Ontario'),
-(15, 'Thirty Bench', 'Beamsville, Canada', 'Ontario'),
-(16, 'Domaine du Nival', 'Québec, Canada', 'Québec'),
-(17, 'Vignoble Rivière du Chêne', 'Saint-Eustache, Canada', 'Québec'),
-(18, 'Vignoble La Bauge', 'Saint-Paul-d’Abbotsford, Canada', 'Québec'),
-(19, 'Vignoble du Ruisseau', 'Dunham, Canada', 'Québec'),
-(20, 'Vignoble Sainte-Pétronille', 'Sainte-Pétronille, Canada', 'Québec');
+(1, 'Mission Hill', 'Kelowna, Canada', 'BC'),
+(2, 'Inniskillin', 'Niagara-on-the-Lake, Canada', 'ON'),
+(3, 'Jackson-Triggs', 'Niagara-on-the-Lake, Canada', 'ON'),
+(4, 'Quails'' Gate', 'West Kelowna, Canada', 'BC'),
+(5, 'Nk''Mip Cellars', 'Osoyoos, Canada', 'BC'),
+(6, 'Peller Estates', 'Niagara-on-the-Lake, Canada', 'ON'),
+(7, 'Tawse Winery', 'Vineland, Canada', 'ON'),
+(8, 'Cave Spring', 'Jordan, Canada', 'ON'),
+(9, 'Sumac Ridge', 'Summerland, Canada', 'BC'),
+(10, 'Sandhill Wines', 'Kelowna, Canada', 'BC'),
+(11, 'CedarCreek Estate Winery', 'Kelowna, Canada', 'BC'),
+(12, 'Hester Creek', 'Oliver, Canada', 'BC'),
+(13, 'Burrowing Owl', 'Oliver, Canada', 'BC'),
+(14, 'Henry of Pelham', 'St. Catharines, Canada', 'ON'),
+(15, 'Thirty Bench', 'Beamsville, Canada', 'ON'),
+(16, 'Domaine du Nival', 'Québec, Canada', 'QC'),
+(17, 'Vignoble Rivière du Chêne', 'Saint-Eustache, Canada', 'QC'),
+(18, 'Vignoble La Bauge', 'Saint-Paul-d’Abbotsford, Canada', 'QC'),
+(19, 'Vignoble du Ruisseau', 'Dunham, Canada', 'QC'),
+(20, 'Vignoble Sainte-Pétronille', 'Sainte-Pétronille, Canada', 'QC');
 
 INSERT INTO Vin (id_vin, nom, type, millesime) VALUES
 (1, 'Oculus', 'Rouge', 2017),
@@ -87,28 +87,29 @@ INSERT INTO Vin (id_vin, nom, type, millesime) VALUES
 (61, 'Pinot Gris du Vignoble Sainte-Pétronille', 'Blanc', 2020);
 
 INSERT INTO Distributeur (id_distributeur, nom, adresse, region) VALUES
-(1, 'VQA Wines of Canada', 'Toronto, Canada', 'Ontario'),
-(2, 'BC Liquor Stores', 'Vancouver, Canada', 'Colombie-Britannique'),
-(3, 'SAQ', 'Montréal, Canada', 'Québec'),
-(4, 'LCBO', 'Ottawa, Canada', 'Ontario'),
-(5, 'Alberta Liquor Store Association', 'Edmonton, Canada', 'Alberta'),
-(6, 'Nova Scotia Liquor Corporation', 'Halifax, Canada', 'Nouvelle-Écosse'),
-(7, 'Manitoba Liquor & Lotteries', 'Winnipeg, Canada', 'Manitoba'),
-(8, 'Newfoundland and Labrador Liquor Corporation', 'St. John''s, Canada', 'Terre-Neuve-et-Labrador'),
-(9, 'PEI Liquor Control Commission', 'Charlottetown, Canada', 'Île-du-Prince-Édouard'),
-(10, 'Saskatchewan Liquor and Gaming Authority', 'Regina, Canada', 'Saskatchewan');
+(1, 'VQA Wines of Canada', 'Toronto, Canada', 'ON'),
+(2, 'BC Liquor Stores', 'Vancouver, Canada', 'BC'),
+(3, 'SAQ', 'Montréal, Canada', 'QC'),
+(4, 'LCBO', 'Ottawa, Canada', 'ON'),
+(5, 'Alberta Liquor Store Association', 'Edmonton, Canada', 'AB'),
+(6, 'Nova Scotia Liquor Corporation', 'Halifax, Canada', 'NS'),
+(7, 'Manitoba Liquor & Lotteries', 'Winnipeg, Canada', 'MB'),
+(8, 'Newfoundland and Labrador Liquor Corporation', 'St. John''s, Canada', 'NL'),
+(9, 'PEI Liquor Control Commission', 'Charlottetown, Canada', 'PE'),
+(10, 'Saskatchewan Liquor and Gaming Authority', 'Regina, Canada', 'SK');
 
 INSERT INTO Detaillant (id_detaillant, nom, adresse, region) VALUES
-(1, 'Vin Room', 'Calgary, Canada', 'Alberta'),
-(2, 'Wine Rack', 'Toronto, Canada', 'Ontario'),
-(3, 'LCBO', 'Ottawa, Canada', 'Ontario'),
-(4, 'J Webb Wine Merchant', 'Calgary, Canada', 'Alberta'),
-(5, 'Crown Liquor Store', 'Vancouver, Canada', 'Colombie-Britannique'),
-(6, 'Metropolitan Wines', 'Toronto, Canada', 'Ontario'),
-(7, 'Marquis Wine Cellars', 'Vancouver, Canada', 'Colombie-Britannique'),
-(8, 'The Wine Cellar', 'Montreal, Canada', 'Québec'),
-(9, 'La Cave à Vin', 'Montréal, Canada', 'Québec'),
-(10, 'Vino Volo', 'Ottawa, Canada', 'Ontario');
+(1, 'Vin Room', 'Calgary, Canada', 'AB'),
+(2, 'Wine Rack', 'Toronto, Canada', 'ON'),
+(3, 'LCBO', 'Ottawa, Canada', 'ON'),
+(4, 'J Webb Wine Merchant', 'Calgary, Canada', 'AB'),
+(5, 'Crown Liquor Store', 'Vancouver, Canada', 'BC'),
+(6, 'Metropolitan Wines', 'Toronto, Canada', 'ON'),
+(7, 'Marquis Wine Cellars', 'Vancouver, Canada', 'BC'),
+(8, 'Caveau de la Charité', 'Montréal, Canada', 'QC'),
+(9, 'Le Sommelier', 'Québec, Canada', 'QC'),
+(10, 'La Maison des Vins', 'Montréal, Canada', 'QC');
+
 
 INSERT INTO Transactions (id_transactions, date, Prix) VALUES
 (1, '2024-09-01', 5000),
