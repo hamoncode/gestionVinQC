@@ -48,14 +48,22 @@ Where t.id_distributeur = di.id_distributeur
 And t.id_detaillant = de.id_detaillant
 
 -- Requête #4 
--- pour le mois de juin seulement, lister les transactions de la SAQ 
+-- pour le mois de Juillet seulement, lister les transactions de la SAQ 
 
-
+Select t.id_transactions , nom_distributeur, t.Prix
+From Transactions t
+JOIN Distributeur d ON t.id_distributeur = d.id_distributeur
+WHERE nom_distributeur = 'SAQ'
+AND MONTH(t.date) = 7
 
 -- Requête #5 
 -- identifier le vin le plus populaire par le nombre de transactions
 
-
+SELECT TOP 1 v.nom_vin, COUNT(t.PRIX) nombre_transactions
+From Transactions t
+JOIN Vin v ON t.id_vin = v.id_vin
+GROUP BY v.nom_vin
+ORDER BY nombre_transactions DESC
 
 -- Requête #6 
 -- Les vins du Quebec
