@@ -20,9 +20,16 @@ From Transactions
 
 
 -- Requête #1
--- producteur qui on vendu plus que 5 types de vins
+-- producteur qui on vendu plus que 3 types de vins
 
-
+SELECT p.nom_producteur, COUNT(DISTINCT v.type_vin) AS compte_type_vin
+FROM Producteur p
+JOIN Vin v ON p.id_producteur = v.id_producteur
+JOIN Transactions t ON t.id_vin = v.id_vin
+WHERE t.prix > 0
+GROUP BY p.nom_producteur
+HAVING COUNT(DISTINCT v.type_vin) >= 2
+ORDER BY p.nom_producteur;
 
 -- Requête #2 
 -- afficher le nom des vins selon leurs producteurs en ordre alphabétique
