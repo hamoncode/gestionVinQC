@@ -1,25 +1,38 @@
 # gestionVinQC
 
-## conception base données relationnelles
+## navigation du projet
 
-- modélisation des entités-relation en UML
-  - conception en détail dans doc/conception.drawio
+- voici comment navigier les fichiers en suivant les étapes du projet
 
-## convertion en Shéma relationnelle
+### doc
 
-légende: #clé_primaire %clé_étrangère
+1) exigences.md
+   - mes interpretations des exigences du projet
+   - avec plusieur idées de conception
 
-## convertion en base physique
+2) Conception.drawio
+   - j'ai fait la conception avec l'outil .drawio
+   - une image se trouve au début du fichier Screenshot.pdf
+  
+3) ShemaRelationnel.md
 
-1) script de création de base de données
-  - tables
-  - index
-  - vues
-  - contrainte d'intégrité
-2) script d'ajout des données
-  - le faire avec un parser 
-3) scripts de requêtes SQL(20)
-4) déclencheurs, procédure stockées et curseurs(6)
+4) Screenshots.pdf
+  - toutes les executions de requêtes après l'image de conception
+
+### src
+
+1) CreateDatabase.sql
+  - script de creation de db et tables
+
+2) insererDummyValues.sql
+  - script insertion de fauses données
+  - un parseur va remplacer ce fichier
+
+3) RequetesSQL.sql
+  - script pour les 20 requetes demandés
+
+4) ProceduresStockées.sql
+  - script pour les 6 triggers, curseur et procedures stockées demandés
 
 ## suite au projet
 
