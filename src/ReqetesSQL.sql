@@ -19,13 +19,17 @@ Select *
 From Transactions
 
 -- Request #2 
--- afficher le nom des vin et de leur producteur
+-- afficher le nom des vins selon leurs producteurs en ordre alphabétique
 
-SELECT nom
-FROM Vin,producteur
+SELECT nom_vin, nom_producteur
+FROM Vin v,Producteur p
+WHERE v.id_producteur = p.id_producteur
+ORDER BY nom_producteur
 
 -- Request #3
 -- les noms des distributeurs et des détaillants qui ont fait des transactions.
+
+
 
 -- Request #4 
 -- les noms des distributeurs et des producteur qui ont fait des transactions.
