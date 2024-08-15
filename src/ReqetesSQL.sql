@@ -1,6 +1,6 @@
 USE BD_GestionVinsQC
 
--- Request #1
+-- Request #0
 -- tester si les données ont bien été entrées
 
 Select *
@@ -18,6 +18,12 @@ From Distributeur
 Select *
 From Transactions
 
+
+-- REQUEST #1
+-- producteur qui on vendu plus que 5 types de vins
+
+
+
 -- Request #2 
 -- afficher le nom des vins selon leurs producteurs en ordre alphabétique
 
@@ -29,15 +35,18 @@ ORDER BY nom_producteur
 -- Request #3
 -- les noms des distributeurs et des détaillants qui ont fait des transactions.
 
-
+Select di.nom_distributeur , de.nom_detaillant, t.date, t.Prix
+From Transactions t , Distributeur di , Detaillant de
+Where t.id_distributeur = di.id_distributeur
+And t.id_detaillant = de.id_detaillant
 
 -- Request #4 
--- les noms des distributeurs et des producteur qui ont fait des transactions.
+-- pour le mois de juin seulement, lister les transactions de la SAQ 
 
 
 
 -- Request #5 
--- les noms des producteurs qui ont fait affaire avec des distributeurs.
+-- identifier le vin le plus populaire par le nombre de transactions
 
 
 
