@@ -32,10 +32,10 @@
   - un parseur va remplacer ce fichier
 
 3) RequetesSQL.sql
-  - script pour les 20 requetes demandés
+  - 20 requetes sql
 
 4) ProceduresStockées.sql
-  - script pour les 6 triggers, curseur et procedures stockées demandés
+  - script pour 6 triggers, curseur et procedures stockées
 
 ## suite au projet
 
