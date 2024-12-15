@@ -1,4 +1,7 @@
 # gestionVinQC
+## conception de la base de données
+
+![image](https://github.com/user-attachments/assets/1746db79-a07b-4875-82d1-99c67f8e0760)
 
 ## navigation du projet
 
