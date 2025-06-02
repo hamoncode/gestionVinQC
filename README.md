@@ -39,7 +39,6 @@
 
 ## suite au projet
 
-- transformer base de données vins en films
 - prototype barre recherche / site web
   - backend et front end en php
 - Web scrapper
